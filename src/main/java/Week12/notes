@@ -1,0 +1,17 @@
+I/O-Datenströme
+
+I/O-> input/ output
+
+ statement1 | statement2
+ Pipe turns the ouput from statement1 one into input for statement2
+
+ statement1 | statement2 > demo.txt
+ turns output from statement2 into txt file and saves it at operation location
+
+ I/O Datenströme muss explizit geschlossen werden!
+
+ intresting try catch in slides for this(important for exceptionhandling for close())
+
+ UTF-8 encoding ist interssant
+Immer explizit encoden
+UTF-8 ist gut

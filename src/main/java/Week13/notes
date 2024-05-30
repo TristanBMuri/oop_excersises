@@ -1,0 +1,40 @@
+lambdas
+WICHTIG: Nur implementieren wenn man den code nachher immer noch versteht!
+
+//lambda quickstart:
+https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/Lambda-QuickStart/index.html
+
+valid lambda code:
+(x, y) -> {return x + y}
+
+lambdas die keine parameter haben müssen trotzdem klammern implementieren
+() -> this.doSomething();
+
+komplexe lambda expression
+sucht nach method doSomething mit weitergegebenen parametern als input
+(random amount of parameters) -> this::doSomething
+
+slide 21 functional interfaces
+
+Stream API komplett anders als I/O streams
+
+kinda goated but harder to understand
+very good for influencing larger data and arrays
+
+verschiedene Stream API methoden arten
+1. Suppliers // Ist eine quelle für daten
+    .stream()
+    .of()
+    .range() // Theoretisch kann man for loops etc. damit ersetzen
+2. Intermediate operations // kommen nach einem supplier. modifiziert inputs
+    .filter()
+3. Terminal operations // terminieren die Stream operation
+    .forEach()
+    .min()
+    .collect()
+
+Vorsichtig wie effizient diese Stream API sein können da man mit wenigen Statements mehrere for loops auslösen kann
+
+I.e. man merkt es selber deutlich schneller wenn man 10 for loops implementiert als 10 lustige stream API/ lambda calls
+
+IntStream unglaublich viel performanter als Stream<Integer> weil Integer ein Objekt ist.

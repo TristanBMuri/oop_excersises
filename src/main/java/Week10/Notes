@@ -1,0 +1,14 @@
+Fehlerkategorien:
+    1. Nicht behebbare fehler
+    Biespiel: OutOfMemoryException
+
+    2. Durch reine Wiederholung "behebbar"
+    Beispiel: Socketexception
+    - z.B. durch einen temporären Netzwerkunterbruch verursacht,
+    wirde der Fehler bei einer WIederholung nich mehr auftreten
+
+    3. Durch aktive Korrektur (und dann Wiederholung) behebbar.
+    Beispiel: UnknownHostException (Unbekannter Hostaname)
+    - Kann z.B durch die Korrektur/ Ergänzung des Hostnames und nachfolgender Wiederholung behoben werden
+
+Try catch is still goated
